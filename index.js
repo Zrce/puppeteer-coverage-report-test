@@ -24,6 +24,7 @@ const urlToTest = [
     "https://www.blick.ch/digital/gadgets-technik/chinaschrott-oder-wish-schnaeppchen-handyhalterung-fuers-auto-kostet-nur-sechs-franken-id15959050.html"
 ]
 
+//Scroll to end of the page 
 const autoScroll = async (page) => {
     await page.evaluate(async () => {
         await new Promise((resolve, reject) => {
@@ -98,7 +99,7 @@ const start = async () => {
     //Generate output file
     await fs.promises.mkdir('results/' + projectname, { recursive: true })
     if (!fs.existsSync('results/' + projectname + '/data.csv')) {
-        await fs.appendFile('results/' + projectname + '/data.csv', 'url, file, % unused\r\n', function (err) {
+        await fs.appendFile('results/' + projectname + '/data.csv', 'url, asset url, % unused\r\n', function (err) {
             if (err) throw err;
         });
     }

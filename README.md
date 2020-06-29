@@ -2,7 +2,9 @@
 
 Puppeteer script using Chrome's Coverage Report for CSS and JavaScript files. 
 
-More about: https://pptr.dev/#?product=Puppeteer&version=v3.3.0&show=api-class-coverage
+Article about this: https://medium.com/@WillmannTobias/how-to-bulk-find-unused-css-and-javascript-with-puppeteer-and-chrome-coverage-f79f7d885d59
+
+Documentation: https://pptr.dev/#?product=Puppeteer&version=v3.3.0&show=api-class-coverage
 
 # Install
 use "npm install" to install 
